@@ -117,6 +117,10 @@ counties = geojson["features"]
 # assign every county their appropriate ARES district
 
 # Array#group_by
+
+District_groups = array.group_by(COUNTY_NAMES_TO_DISTRICTS)
+
+
 pp counties.first
 
 district_counties = [{}]
